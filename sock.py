@@ -38,7 +38,7 @@ class Sock(object):
 		flag = True
 		while flag:
 			try:
-				chunk = self.sock.recv(1024)
+				chunk = self.socket.recv(1024)
 			except socket.timeout:
 				chunk = ""
 			finally:
